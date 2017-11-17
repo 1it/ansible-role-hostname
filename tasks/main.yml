@@ -6,8 +6,14 @@
     owner: root
     group: root
     mode: 0644
+  register: hostname
   tags:
     - hostname
+
+- name: Hostname | Update the hostname (shell)
+  command:
+    "hostname -F /etc/hostname"
+  when: hostname|changed
 
 - name: Hostname | Update the hosts - (/etc/hosts)
   template:
