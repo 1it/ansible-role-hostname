@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Ivan Tuzhilkin
+  description: Ansible Role for manage server's hostname and /etc/hosts
+  license: MIT
+  min_ansible_version: '2.3.0'
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - precise
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - wheezy
+
+  galaxy_tags:
+    - system
+    - hosts
+    - hostname
+
+dependencies: []
